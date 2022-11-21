@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Forms</title>
+      <meta charset = "utf-8">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="dataform">
+         <form  form class="form" action="#" method="post">
+            <div class="userdata">
+               <legend class="form-title">Please fill out the form below</legend>
+               <div class="field">
+                  <label for="">Full name</label>
+                  <input type="text" name="username">
+               </div>
+               <div class="field">
+                  <label for="">Your e-mail address</label>
+                  <input type="email" name="email">
+               </div>
+               <div class="field">
+                  <label for="">Your phone number</label>
+                  <input type="tel" name="tel">
+               </div>
+               <div class="field">
+                  <label for="">Select your country</label>
+                  <select name="country">
+                     <option class="item active">Select your country</option>
+                     <option class="item">Ukraine</option>
+                     <option class="item">UK</option>
+                     <option class="item">USA</option>
+                     <option class="item">Poland</option>
+                  </select>
+               </div> 
+            </div>
+            <div class="radio-buttons">
+               <h2 class="radio-title">I want to attend event</h2>
+               <div>
+                  <input id="first-radio" class="input-radio" name="event" type="radio">
+                  <label for="first-radio">online</label>
+                  <!-- <span class="fake-radio"></span> -->
+               </div>
+               <div>
+                  <input id="second-radio" class="input-radio" name="event" type="radio">
+                  <label for="second-radio">offline</label>
+                  <!-- <span class="fake-radio"></span> -->
+               </div>
+            </div>
+            <div class="form-comments">
+               <label class="comments-label">Comments</label>
+               <textarea class="field-comments" placeholder="comments"></textarea>
+            </div>
+            <div class="container-checkbox">
+               <input id="label-checkbox" class="input-checkbox" type="checkbox">
+               <label for="label-checkbox" class="label-checkbox"><span>I agree with the <a href="#">privacy policy</a></span></label>
+               <!-- <span class="fake-checkbox"></span> -->
+            </div>
+            <div class="form-actions">
+               <input type="reset" value="Clear form">
+               <input type="submit" value="Submit form"> 
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,249 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   font-size: 20px;
+   line-height: 22px;
+   color: #000;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+
+.dataform{
+   padding: 50px 10px 80px;
+   width: 1440px;
+   font-family: Roboto, sans-serif;
+}
+
+.userdata input{
+   width: 800px;
+   height: 60px;
+   border-radius: 8px;
+   background-color: #e6e6e6;
+   border: 2px solid #808080;
+   padding: 0;
+}
+
+.userdata label{
+   display: block;
+   margin: 0 0 10px 0;
+}
+
+.form-title{
+   font-size: 32px;
+   margin: 0 0 50px 0;
+}
+
+.field{
+   margin: 0 0 40px 0;
+}
+
+.field select{
+   border: 2px solid #808080;
+   border-radius: 8px;
+   padding: 0 5px;
+   height: 57px;
+   background:  #e6e6e6;
+   width: 800px;
+   font-size: 20px;
+   color: #000000;
+}
+
+.input-radio{
+   cursor: pointer;
+}
+
+.radio-title{
+   margin: 0 0 20px 0 ;
+   font-size: 24px;
+   color: #000000;
+}
+
+.radio-buttons{
+   margin: 0 0 20px 0;
+}
+
+[type="radio"]{
+   margin: 0 0 20px 0;
+}
+
+.form-comments{
+   margin: 0 0 20px 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.field-comments{
+   width: 800px;
+   height: 100px;
+   border-radius: 8px;
+   background-color: #e6e6e6;
+   border: 2px solid #808080;
+   resize: none;
+   cursor: pointer;
+}
+
+.comments-label{
+   margin: 0 0 12px 0;
+}
+
+.container-checkbox{
+   margin: 0 0 47px 0;
+}
+
+.label-checkbox{
+   line-height: 30px;
+   vertical-align: top;
+   cursor: pointer;
+}
+
+.input-checkbox{
+   width: 30px;
+   height: 30px;
+   border-radius: 8px;
+   vertical-align: top;
+   line-height: 30px;
+   margin: 0;
+   cursor: pointer;
+}
+
+[type="reset"]{
+   width: 360px;
+   height: 75px;
+   border-radius: 8px;
+   background-color: #e6e6e6;
+   border: 0px solid #808080;
+   font-size: 24px;
+   color: #808080;
+   margin: 0 40px 0 0 ;
+   cursor: pointer;
+}
+
+[type="submit"]{
+   width: 360px;
+   height: 75px;
+   border-radius: 8px;
+   background-color: #000000;
+   border: 0px solid #808080;
+   font-size: 24px;
+   color: #ffffff;
+   margin: 0 0 0 40px;
+   cursor: pointer;
+}
+
+/* Я намагалась зробити фейкові кнопки, але поки вийшло тільки якщо вкласти інпут в лейбл і додати фейковий спан, але після цього я не можу відцентрувати текст, тому на жаль, поки що не можу коректно кастомізувати кнопки */
+
+/* .input-checkbox {
+   display: none;
+}
+.fake-checkbox {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   border-radius: 8px;
+   background-color: #e6e6e6;
+   border: 2px solid #808080;
+   position: relative;
+}
+
+.fake-checkbox::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 15px;
+   height: 15px;
+   background-color: #000;
+   border-radius: 3px;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.input-checkbox:checked + .fake-checkbox::before{
+   opacity: 1;
+} */
+
+
+
+/* .input-radio {
+   display: none;
+}
+
+.fake-radio {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: #e6e6e6;
+   border: 2px solid #808080;
+   position: relative;
+}
+
+.fake-radio::before{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 15px;
+   height: 15px;
+   background-color: #000;
+   border-radius: 50%;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.input-radio:checked + .fake-radio::before{
+   opacity: 1;
+}
+ */
